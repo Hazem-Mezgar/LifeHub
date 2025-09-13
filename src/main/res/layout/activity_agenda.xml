@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Card for Calendar -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="?attr/colorSurface">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:dateTextAppearance="@style/CalendarDateText"
+            android:weekDayTextAppearance="@style/CalendarWeekText"
+            android:selectedDateVerticalBar="@color/colorAccent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Events Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Events"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="?attr/colorOnSurface"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Card for Events List -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="?attr/colorSurface">
+
+        <ListView
+            android:id="@+id/eventsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"
+        app:backgroundTint="?attr/colorSecondary"
+        app:rippleColor="#80FFFFFF"
+        app:elevation="6dp"
+        app:hoveredFocusedTranslationZ="12dp" />
+
+</LinearLayout>
