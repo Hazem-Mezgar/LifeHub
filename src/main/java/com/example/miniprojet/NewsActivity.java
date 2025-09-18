@@ -20,7 +20,7 @@ import java.util.List;
 
 public class NewsActivity extends AppCompatActivity {
     // Déclaration de la clé API pour l'accès à l'API des actualités
-    private static final String API_KEY = "67622bff47b94fa79c3c626d2ee35924"; // Replace with a valid NewsAPI key
+    private static final String API_KEY = "secret code"; // Replace with a valid NewsAPI key
     // Déclaration des variables pour la vue et les données
     private ProgressBar mProgressBar;// ProgressBar pour afficher l'état de chargement
     private RecyclerView mRecyclerView;// RecyclerView pour afficher la liste des articles
