@@ -26,7 +26,7 @@ public class WeatherActivity extends AppCompatActivity { // Début de la classe 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 100;
 
     // Clé API OpenWeatherMap (à remplacer par la tienne si besoin)
-    private static final String API_KEY = "cd4cfa86cd0a87c98486bae32d94657e";
+    private static final String API_KEY = "secret code";
 
     // Déclaration des vues de l'interface utilisateur
     private TextView textView; // Affichera les infos météo
@@ -141,4 +141,5 @@ public class WeatherActivity extends AppCompatActivity { // Début de la classe 
 }
 
 //volley Une bibliothèque Android qui permet de faire facilement des requêtes HTTP (GET, POST...) sans tout coder soi-même.
+
 //json Format de données (comme un dictionnaire) utilisé par les API pour envoyer des données lisibles
